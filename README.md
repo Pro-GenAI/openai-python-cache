@@ -1,5 +1,7 @@
 # 🍰 openai-python-cache
 
+Note: This fork supports latest version of OpenAI Python library.
+
 A thin wrapper around the OpenAI Python bindings for caching responses.
 
 ## Motivation

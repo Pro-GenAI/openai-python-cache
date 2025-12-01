@@ -1,8 +1,8 @@
 import hashlib
-import sqlite3
 import json
-
 from typing import TypedDict, Optional
+
+import sqlite3
 
 
 class CacheSettings(TypedDict):
@@ -16,11 +16,11 @@ DEFAULT_CACHE_SETTINGS: CacheSettings = {
 
 class Sqlite3CacheProvider(object):
     CREATE_TABLE = """
-    CREATE TABLE IF NOT EXISTS cache(
-        key string PRIMARY KEY NOT NULL,
-        request_params json NOT NULL,
-        response json NOT NULL
-    );
+        CREATE TABLE IF NOT EXISTS cache(
+            key string PRIMARY KEY NOT NULL,
+            request_params json NOT NULL,
+            response json NOT NULL
+        );
     """
 
     def __init__(self, settings: CacheSettings = DEFAULT_CACHE_SETTINGS):
