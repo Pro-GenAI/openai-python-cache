@@ -11,7 +11,7 @@ def main():
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": "Hello! Can you tell me a joke?"}
         ],
-        model="gpt-3.5-turbo",
+        model="Model-name-here",
     )
     end_time = time.time()
     print("Response:", response)

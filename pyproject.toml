@@ -9,7 +9,5 @@ description = "A classifier for AI agent actions to determine if they are harmfu
 authors = [
     {name = "Praneeth Vadlapati", email = "praneeth.vad@gmail.com"},
 ]
-dependencies = [
-    "openai",
-]
+dependencies = ["openai", "db-sqlite3"]
 requires-python = ">=3.8"
